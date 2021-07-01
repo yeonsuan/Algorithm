@@ -1,4 +1,4 @@
-//중복단어제거 (개완벽 하다.......)
+//중복단어제거 
 function solution(arr) {
     let answer=[];
     for(let i=0; i<=arr.length; i++){
