@@ -7,7 +7,7 @@ function solution(n,arr) {
             let m=x;
             while(m){
                 sum=sum+(m%10);
-                m=Math.floor(m/10);  //여기진심 이해 하나도안돼! 이줄 왜 들어가는거야..? 12가 왜들어가
+                m=Math.floor(m/10);  //질문한 부분
         }
             if(sum>max){
                 max=sum;
