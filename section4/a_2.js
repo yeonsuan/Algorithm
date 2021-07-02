@@ -3,7 +3,7 @@ function solution(n,arr) {
     let answer;
     let max=Number.MIN_SAFE_INTEGER;
         for(let x of arr){
-            let sum=x.toString().split('').reduce((a,b)=>a+Number(b),0); //미친 리듀스
+            let sum=x.toString().split('').reduce((a,b)=>a+Number(b),0); 
             if(sum>max){
                 max=sum;
                 answer=x;
