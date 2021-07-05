@@ -31,6 +31,7 @@ console.log(solution(arr));
 //     let answer='';
 //     for(let x of arr){
 //         x.split('').reverse.joint('')//여기서 이제 바뀜
+//         console.log(x)
 //         if(x<=1)return false;
 //         if (x===2 || x===3) answer+=x;
 //         if(n%2)return false;
@@ -39,7 +40,7 @@ console.log(solution(arr));
 //             if(n%divisor===0)return false;
 
 //             divisor+=2;
-//         }
+        
 
 //         }
 
