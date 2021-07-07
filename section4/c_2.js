@@ -1,5 +1,4 @@
 //멘토링 코드만
-
 function solution(test){
     let answer=0;
     m=test.length;
