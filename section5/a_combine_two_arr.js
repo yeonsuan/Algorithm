@@ -1,4 +1,4 @@
-//두 배열 합치기 (0708)
+//두 배열 합치기 spread operator 방식
 function solution(arr,arr2){
     let answer;
     let newArr=[
