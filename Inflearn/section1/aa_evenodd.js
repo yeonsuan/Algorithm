@@ -1,10 +1,11 @@
 function solution(num) {
-    var answer;
-    if (num % 2 ===0){answer = 'suan'}
+    let answer;
+    if (num % 2 ===0){answer = 'even'}
     else {answer = 'Odd'};
     return answer;
 }
 
+console.log(solution(4))
 
 
 function evenOrOdd(num){
