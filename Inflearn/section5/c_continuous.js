@@ -1,4 +1,4 @@
-//연속 부분 수열 1
+//연속 부분 수열 1 진짜진짜 왕 중요!!!! 투포인트 알고리즘 대표문제
 
 function continuos(m,arr){
     let answer=0;
@@ -8,9 +8,9 @@ function continuos(m,arr){
     for(p1=0; p1<arr.length; p1++){
         sum+=arr[p1];
         if(sum===m)answer++;
-        while(sum>m){ //while을 쓰는 이유 ? : m보다 작아질때까지 계속 돌리기위해..?
+        while(sum>=m){ //while을 쓰는 이유 : m 될때까지 계속 빼야하기때문에!(같아도)
             sum-=arr[p2++];
-            if(sum===m)answer++;
+            if(sum===m)answer++; //위에서 빼놓고 또 같은지 확인하기
         }
     }
 
