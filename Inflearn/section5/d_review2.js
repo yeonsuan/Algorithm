@@ -7,9 +7,9 @@ const solution = (n, arr) => {
     for(p1=0; p1<arr.length; p1++){
         sum+=arr[p1];
         while(sum>n){                //직접 써보면서 확인하면, 같을 땐 p1을 키우고 커졌을때만 p2를 키운다!
-            sum-=arr[p2++];
+            sum-=arr[p2++];          //그래서 >=가 아니라, >인것
         }
-        answer+=p1-p2+1;
+        answer+=p1-p2+1;             //이 부분에 대한 식을 생각하도록 노력하자
     }
     return answer;
 }
