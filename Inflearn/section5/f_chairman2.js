@@ -5,12 +5,18 @@
 const solution =(s)=> {
     let answer;
     let max=Number.MIN_SAFE_INTEGER;
+
     let sH = new Map(); //뉴 연산자 만들어서~(이걸 왜 만들었는지 생각해보기)
+
     for (let x of s){   //그안에서 포문 돌려서
         if(sH.has(x)){ // -->sH안에 x값이 들어있냐?(has)물어보는 것. 
-            sH.set(x, sH.get(x) + 1);   //get은 객체값을 불러올 때 쓰는 것 같다~
+            sH.set(x, sH.get(x) + 1);   
+            //get은 객체값을 불러올 때 쓰는 것 같다~
             //x 기존값(ABCD..)이 있을 경우에는 기존값에다 1 추가!!!
-        } else sH.set(x, 1); //기존값 없으면 그냥 하나~
+            //그리고 set을 통해서 내가 원하는 값으로 셋팅해주기!!
+        } else sH.set(x, 1); 
+            //기존값 없으면 그냥 하나~
+
         for (let [key,value] of sH){ //key가 문자, value가 갯수 세는 것
             if(value>max){
                 max=value;
