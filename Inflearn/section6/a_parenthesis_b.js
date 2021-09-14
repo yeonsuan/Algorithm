@@ -2,8 +2,8 @@
 //스택 : 데이터를 집어넣는 push, 데이터를 추출하는 pop, 맨 나중에 넣은 데이터 확인 peek
 
 solution = (s) => {
-    let answer="YES";
-    stack=[];
+    let answer="YES"; //YES를 답으로 정해두고
+    stack=[];           // stack 배열 만들기
     for(let x of s){
         if(x==='(') stack.push(x);
         else{
